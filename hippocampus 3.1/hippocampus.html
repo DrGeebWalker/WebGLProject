@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hippocampus 3.2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+<br>
+    <p>
+        <input type="button" id="HMbutton" onclick="HeadBuck_runStop()" value="Head Movement ON">
+        <input type="button" id="ARMbutton" onclick="ARM_runStop()" value="Arm Movement ON">
+	    <input type="button" id="Tbutton" onclick="TAIL_runStop()" value="Tail ON">
+      <input type="button" id="Fbutton" onclick="FLIP_runStop()" value="FLIP">
+
+    
+    </p>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+    <script src="lib/glmatrix.js"></script>
+    <script src = 'lib/cuon-matrix.js'></script>
+    <script src="buildHippocampus.js"></script>
+    <script src="hippocampusMaterials.js"></script>
+    <script src="createHippocampus.js"></script>
+
+  </body>
+</html>
